@@ -70,10 +70,15 @@ translated: true
 
 Мы в свою очередь на первом этапе рекомендуем воспользоваться [бесплатным MongoDB кластером в Atlas](https://www.mongodb.com/atlas), данная платформа является крайне удобной и гибкой в рабочих задачах. Ниже будет инструкция как воспользоваться MongoDB Atlas в связке с "Feecc Рабочее Место Инженера"
 1. Вам необходимо зарегистрироваться в [MongoDB Atlas](https://www.mongodb.com/atlas), указать свою почту, логин и пароль.
+
 2. Вам необходимо создать свой первый бесплатный MongoDB кластер нажав на кнопку "Create" в разделе "Database" как на картинке ниже ![mongodb-step1](../images/feecc-system-quickstart/mongodb-step1.png)
+
 3. В разделе "Создание своего MongoDB кластера" вы можете выбрать бесплатный режим "Shared", а также провайдера услуги и месторасположение MongoDB кластера как на рисунке ниже ![mongodb-step2](../images/feecc-system-quickstart/mongodb-step2.png)
+
 4. После того как ваш первый MongoDB кластер был создан вы должны нажать на кнопку "Connect" для уточняния информации по методу подключения к MongoDB кластеру как на рисунке ниже ![mongodb-step3](../images/feecc-system-quickstart/mongodb-step3.png)
+
 5. В разделе методы подключения выберете "Connect your application" как на рисунке ниже ![mongodb-step4](../images/feecc-system-quickstart/mongodb-step4.png)
+
 6. В разделе "Select your driver and version" вам нужно выбрать Python и любую последнию версию от 3.10 как на рисунке ниже ![mongodb-step5](../images/feecc-system-quickstart/mongodb-step5.png)
 
 В результате всех манипуляций у вас будет строка в которой будет храниться информация о методе подключения к вашему MongoDB кластеру , где вместо черного прямоугольника будет ваш логин, а вместо поля `<password>` вам необходимо будет вписать ваш пароль, в формате `mongodb+srv://yourlogin:yourpassword@......` эта строка будет использоваться в качестве значения переменной `MONGODB_URI` в .env файле при развертывании системы. 
